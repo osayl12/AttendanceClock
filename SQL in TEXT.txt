@@ -1,0 +1,18 @@
+CREATE TABLE "presences" (
+	"id"	NVARCHAR(255),
+	"workerId"	NVARCHAR(255) NOT NULL,
+	"date"	BIGINT NOT NULL,
+	"start"	BIGINT NOT NULL,
+	"end"	BIGINT NOT NULL,
+	FOREIGN KEY("workerId") REFERENCES "workers"("id"),
+	PRIMARY KEY("id")
+);
+
+-------------------------------
+CREATE TABLE "workers" (
+	"id"	NVARCHAR(255),
+	"firstName"	NVARCHAR(50) NOT NULL,
+	"lastName"	NVARCHAR(50) NOT NULL,
+	"identityNum"	NVARCHAR(50) NOT NULL,
+	PRIMARY KEY("id")
+);
