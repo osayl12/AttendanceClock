@@ -68,52 +68,7 @@
                     <th scope="col">פעולות</th>
                   </tr>
                 </thead>
-                <tbody id="workersRows">
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>אוסיל</td>
-                    <td>חאמד</td>
-                    <td>543534664</td>
-                    <td>
-                      <button
-                        class="btn btn-success"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalEdit"
-                      >
-                        ערוך
-                      </button>
-                      <button
-                        class="btn btn-warning"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalDelete"
-                      >
-                        מחק
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>אוסיל</td>
-                    <td>חאמד</td>
-                    <td>7457453434</td>
-                    <td>
-                      <button
-                        class="btn btn-success"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalEdit"
-                      >
-                        ערוך
-                      </button>
-                      <button
-                        class="btn btn-warning"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalDelete"
-                      >
-                        מחק
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
+                <tbody id="workersRows"></tbody>
               </table>
             </div>
           </div>
@@ -129,10 +84,7 @@
               aria-label="Floating label select example"
               onchange="onSelectWorker()"
             >
-              <option selected>בחר עובד</option>
-              <option value="1">סמחי מולא</option>
-              <option value="2">חמיד אבו ליל</option>
-              <option value="3">אוסיל חאמד</option>
+              <option value="">בחר עובד</option>
             </select>
             <label for="floatingSelect">בחר עובד בשביל לדווח לו נוכחות</label>
           </div>
@@ -168,10 +120,7 @@
               aria-label="Floating label select example"
               onchange="filterWorkers()"
             >
-              <option selected>בחר עובד</option>
-              <option value="1">פארס מולא</option>
-              <option value="2">אנס דגש</option>
-              <option value="3">קוסאי חאמד</option>
+              <option value="">בחר עובד</option>
             </select>
             <label for="workersToSelect"
               >בחר עובד בשביל לבדוק לו את כל המשמרות</label
@@ -188,16 +137,7 @@
                 <th scope="col">סה"כ שעות</th>
               </tr>
             </thead>
-            <tbody id="presences">
-              <tr>
-                <th scope="row">1</th>
-                <td>פארס מולא</td>
-                <td>01/09/2023</td>
-                <td>08:00</td>
-                <td>14:00</td>
-                <td>6</td>
-              </tr>
-            </tbody>
+            <tbody id="presences"></tbody>
           </table>
         </div>
       </div>
